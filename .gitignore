@@ -62,3 +62,5 @@ yarn-debug.log*
 vendor/
 
 log/
+
+public/assets
