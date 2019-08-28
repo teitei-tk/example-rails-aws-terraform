@@ -16,9 +16,10 @@ resource "aws_internet_gateway" "vpc-internet-gateway-1a" {
 }
 
 resource "aws_subnet" "vpc-public-1a" {
-  vpc_id            = "${aws_vpc.vpc.id}"
-  cidr_block        = "10.0.0.0/24"
-  availability_zone = "ap-northeast-1a"
+  vpc_id                  = "${aws_vpc.vpc.id}"
+  cidr_block              = "10.0.0.0/24"
+  availability_zone       = "ap-northeast-1a"
+  map_public_ip_on_launch = true
 
   tags {
     Name = "public-1a"
