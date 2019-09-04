@@ -64,3 +64,8 @@ vendor/
 log/
 
 public/assets
+
+.envrc
+
+.terraform/
+*.tfstate*
